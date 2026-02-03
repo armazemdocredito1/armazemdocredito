@@ -1,0 +1,16 @@
+.navbar-img {
+  max-height: 2rem !important;
+}
+
+.navbar-img-large {
+  max-height: 2.35rem !important;
+}
+
+.navbar-img-extra-large {
+  max-height: 2.8rem !important;
+}
+
+.icon {
+  font-size: 1.3em;
+  vertical-align: middle;
+}

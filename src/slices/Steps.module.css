@@ -1,0 +1,27 @@
+.component-container {
+  @apply border-t border-b bg-gray-100 py-10;
+}
+
+.component-container-inner {
+  @apply max-w-screen-lg mx-auto items-center px-5;
+}
+
+.component-title {
+  @apply text-4xl font-bold font-display tracking-tighter mb-10;
+}
+
+.step-container {
+  @apply
+    basis-0 grow md:text-center
+    flex flex-row-reverse md:flex-col
+  ;
+}
+
+.step-details {
+  @apply
+    text-lg text-center font-semibold font-display
+    tracking-tighter
+    flex
+
+    md:mt-4 mb-2
+}

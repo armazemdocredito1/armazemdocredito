@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+
+:root {
+  --navbar-height: 85px;
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -moz-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded uppercase cursor-pointer inline-block;
+}
+
+.btn-orange,
+.btn-outline-orange {
+  @apply bg-white text-sm;
+}
+
+.btn-orange {
+  @apply bg-wild-orange text-white;
+}
+.btn-orange:hover {
+  @apply bg-wild-orange-dark;
+}
+
+.btn-outline-orange {
+  @apply border border-wild-orange text-wild-orange;
+}
+.btn-outline-orange:hover {
+  @apply border bg-gray-100 text-wild-orange-dark border-wild-orange-dark;
+}
+
+.faq-item dt::after {
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.215 0L0 1.178 6 7l6-5.822L10.785 0 6 4.641 1.215 0z' fill='%234A556B'/%3E%3C/svg%3E");
+  width: 0.7em;
+}
+
+.faq-item dt.active::after {
+  transform: rotate(180deg);
+}
+
+.feature-cover-height {
+  height: 170px;
+}
+
+@screen md {
+  .feature-cover-height {
+    height: auto;
+  }
+}
+
+@screen lg {
+  .feature-height {
+    min-height: 550px;
+  }
+}
+
+.taxes-cover-height {
+  height: 150px;
+}
+@screen md {
+  .taxes-cover-height {
+    height: auto;
+  }
+}
+
+a {
+  @apply text-blue-600;
+}
+
+.p-margin p {
+  margin-bottom: 0.7em;
+}
+
+.form-input {
+  @apply rounded border-gray-300;
+}
+input[disabled] {
+  @apply cursor-not-allowed bg-gray-100 text-gray-600;
+}
+
+input[role='combobox'],
+input[role='combobox']:focus {
+  @apply shadow-none ring-0 border-0;
+}
+
+marker {
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-3&color=ffff43);
+  background-size: cover;
+  background-repeat: round;
+  margin: 0.1em -0.3em;
+  padding: 0.1em 0.3em;
+}
