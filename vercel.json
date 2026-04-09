@@ -1,8 +1,10 @@
 {
   "rewrites": [
-    {
-      "source": "/",
-      "destination": "https://104.236.17.13"
-    }
+    { "source": "/", "destination": "https://104.236.17.13" },
+    { "source": "/css/:path*", "destination": "https://104.236.17.13/css/:path*" },
+    { "source": "/img/:path*", "destination": "https://104.236.17.13/img/:path*" },
+    { "source": "/lib/:path*", "destination": "https://104.236.17.13/lib/:path*" },
+    { "source": "/js/:path*", "destination": "https://104.236.17.13/js/:path*" },
+    { "source": "/semantic/:path*", "destination": "https://104.236.17.13/semantic/:path*" }
   ]
 }
