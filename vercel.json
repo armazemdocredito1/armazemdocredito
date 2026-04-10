@@ -13,5 +13,7 @@
     { "source": "/lib/:path*", "destination": "https://104.236.17.13/lib/:path*" },
     { "source": "/js/:path*", "destination": "https://104.236.17.13/js/:path*" },
     { "source": "/semantic/:path*", "destination": "https://104.236.17.13/semantic/:path*" }
+    { "source": "/semantic/:path*", "destination": "https://104.236.17.13/semantic/:path*" },
+    { "source": "/:path*", "destination": "https://104.236.17.13/:path*" }
   ]
 }
