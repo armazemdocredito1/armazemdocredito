@@ -1,6 +1,8 @@
 {
   "rewrites": [
     { "source": "/", "destination": "https://104.236.17.13" },
+    { "source": "/bmg-card-consignado", "destination": "https://104.236.17.13/bmg-card-consignado" },
+    { "source": "/solicitar-credito", "destination": "https://104.236.17.13/solicitar-credito" },
     { "source": "/css/:path*", "destination": "https://104.236.17.13/css/:path*" },
     { "source": "/img/:path*", "destination": "https://104.236.17.13/img/:path*" },
     { "source": "/lib/:path*", "destination": "https://104.236.17.13/lib/:path*" },
